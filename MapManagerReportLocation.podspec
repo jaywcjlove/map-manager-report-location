@@ -9,6 +9,8 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Kenny Wong" => "wowohoo@qq.com" }
   spec.source       = { :git => "https://github.com/jaywcjlove/map-manager-report-location.git", :tag => "#{spec.version}" }
-  spec.platform     = :ios, '10'
+  spec.platform     = :ios, "10"
+  spec.static_framework = true
+  spec.dependency "AMapLocation", "2.6.7"
   spec.vendored_frameworks = 'MapManager.framework'
 end
