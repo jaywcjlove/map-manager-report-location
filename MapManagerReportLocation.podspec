@@ -10,9 +10,5 @@ Pod::Spec.new do |spec|
   spec.author       = { "Kenny Wong" => "wowohoo@qq.com" }
   spec.source       = { :git => "https://github.com/jaywcjlove/map-manager-report-location.git", :tag => "#{spec.version}" }
   spec.platform     = :ios, "9"
-  spec.static_framework = true
-  spec.requires_arc = true
-  spec.dependency "AMapLocation", "2.6.7"
-  spec.public_header_files = "MapManager.framework/Headers/*.h"
   spec.vendored_frameworks = 'MapManager.framework'
 end
