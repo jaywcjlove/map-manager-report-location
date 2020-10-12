@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "MapManagerReportLocation"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "定位上报部检测平台"
   spec.description  = <<-DESC
   定位上报部检测平台依赖包。
@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Kenny Wong" => "wowohoo@qq.com" }
   spec.source       = { :git => "https://github.com/jaywcjlove/map-manager-report-location.git", :tag => "#{spec.version}" }
   spec.platform     = :ios, "10"
+  spec.pod_target_xcconfig = { 'ARCHS[sdk=iphonesimulator*]' => '$(ARCHS_STANDARD_64_BIT)' }
   spec.static_framework = true
   spec.dependency "AMapLocation", "2.6.7"
   spec.vendored_frameworks = 'MapManager.framework'
