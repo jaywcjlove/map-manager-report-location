@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "MapManagerReportLocation"
-  spec.version      = "0.0.14"
+  spec.version      = "0.0.13"
   spec.summary      = "定位上报部检测平台"
   spec.description  = <<-DESC
                   定位上报部检测平台依赖包。
