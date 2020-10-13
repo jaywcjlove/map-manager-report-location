@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Kenny Wong" => "wowohoo@qq.com" }
   s.source       = { :git => "https://github.com/jaywcjlove/map-manager-report-location.git", :tag => "#{s.version}" }
-  s.platform     = :ios, "9.0"
-  s.ios.deployment_target = "9.0"
+  s.platform     = :ios, "8.0"
+  s.ios.deployment_target = "8.0"
   # s.xcconfig     =  {
   #   "ARCHS": "$(ARCHS_STANDARD)",
   #   'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
