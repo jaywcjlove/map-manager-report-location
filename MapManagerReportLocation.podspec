@@ -12,12 +12,17 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9"
 
   s.xcconfig     =  {
+    "ARCHS": "$(ARCHS_STANDARD)",
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
     'ENABLE_BITCODE' => 'YES'
   }
+  
+  # s.xcconfig            = { "ARCHS": "$(ARCHS_STANDARD)", "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)/AMapFoundation-NO-IDFA/**\"" }
   s.ios.vendored_frameworks = 'MapManager.framework'
-  s.frameworks  = "Foundation", "Security"
-  s.dependency 'AMapLocation', '2.6.7'
-  s.dependency 'GMObjC', '3.1.2'
+  # s.frameworks  = "Foundation", "Security"
+  s.libraries           = "z"
+  s.framework           = [ "SystemConfiguration", "CoreTelephony", "Security", "CoreLocation", "JavaScriptCore" ]
+  s.dependency 'AMapLocation'
+  s.dependency 'GMObjC'
 end
