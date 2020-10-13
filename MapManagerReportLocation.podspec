@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
                   定位上报部检测平台依赖包。
                    DESC
   s.homepage     = "https://github.com/jaywcjlove/map-manager-report-location"
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = { :type => 'MIT', :file => "/LICENSE" }
   s.author       = { "Kenny Wong" => "wowohoo@qq.com" }
   s.source       = { :git => "https://github.com/jaywcjlove/map-manager-report-location.git", :tag => "#{s.version}" }
   s.platform     = :ios, "8.0"
