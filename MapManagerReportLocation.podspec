@@ -9,13 +9,17 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Kenny Wong" => "wowohoo@qq.com" }
   s.source       = { :git => "https://github.com/jaywcjlove/map-manager-report-location.git", :tag => "#{s.version}" }
-  s.platform     = :ios, "9"
+  s.platform     = :ios, "9.0"
+  s.ios.deployment_target = "9.0"
+  # s.xcconfig     =  {
+  #   "ARCHS": "$(ARCHS_STANDARD)",
+  #   'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+  #   'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
+  #   'ENABLE_BITCODE' => 'YES'
+  # }
 
-  s.xcconfig     =  {
-    "ARCHS": "$(ARCHS_STANDARD)",
-    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}"/**',
-    'ENABLE_BITCODE' => 'YES'
+  s.pod_target_xcconfig = {
+    'IPHONEOS_DEPLOYMENT_TARGET' => s.deployment_target(:ios)
   }
   
   # s.xcconfig            = { "ARCHS": "$(ARCHS_STANDARD)", "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)/AMapFoundation-NO-IDFA/**\"" }
