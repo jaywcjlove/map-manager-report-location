@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
     'ENABLE_BITCODE' => 'YES'
   }
   s.ios.vendored_frameworks = 'MapManager.framework'
+  s.frameworks  = "Foundation", "Security"
   s.dependency 'AMapLocation', '2.6.7'
   s.dependency 'GMObjC', '3.1.2'
 end
