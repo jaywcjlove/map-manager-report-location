@@ -21,6 +21,13 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     'IPHONEOS_DEPLOYMENT_TARGET' => s.deployment_target(:ios)
   }
+  s.xcconfig = {
+      'OTHER_LDFLAGS' => '-ObjC',
+      'ENABLE_BITCODE' => "NO",
+      "VALID_ARCHS": "armv7 arm64",
+      "VALID_ARCHS[sdk=iphoneos*]": "armv7 arm64",
+      "VALID_ARCHS[sdk=iphonesimulator*]": "x86_64"
+  }
   
   # s.xcconfig            = { "ARCHS": "$(ARCHS_STANDARD)", "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)/AMapFoundation-NO-IDFA/**\"" }
   s.ios.vendored_frameworks = 'MapManager.framework'
