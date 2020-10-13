@@ -11,6 +11,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/jaywcjlove/map-manager-report-location.git", :tag => "#{spec.version}" }
   spec.platform     = :ios, "9"
   spec.dependency 'AMapLocation', '2.6.7'
+  spec.dependency 'AMapFoundation', '1.6.4'
   spec.dependency 'GMObjC', '3.1.2'
   # spec.source_files = "./MapManager.framework"
   spec.vendored_frameworks = 'MapManager.framework'
