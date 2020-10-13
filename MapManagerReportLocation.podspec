@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MapManagerReportLocation"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "定位上报部检测平台"
   s.description  = <<-DESC
                   定位上报部检测平台依赖包。
@@ -56,6 +56,8 @@ Pod::Spec.new do |s|
   # s.frameworks  = "Foundation", "Security"
   s.libraries           = "z"
   s.framework           = [ "SystemConfiguration", "CoreTelephony", "Security", "CoreLocation", "JavaScriptCore" ]
-  s.dependency 'AMapLocation'
-  s.dependency 'GMObjC'
+  # s.dependency 'AMapLocation'
+  # s.dependency 'GMObjC'
+  s.dependency 'AMapLocation', '2.6.7'
+  s.dependency 'GMObjC', '3.1.2'
 end
