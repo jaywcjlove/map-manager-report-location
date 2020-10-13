@@ -12,6 +12,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9"
   spec.dependency 'AMapLocation', '2.6.7'
   spec.dependency 'GMObjC', '3.1.2'
-  spec.source_files = "./MapManager.framework"
+  # spec.source_files = "./MapManager.framework"
   spec.vendored_frameworks = 'MapManager.framework'
 end
