@@ -1,7 +1,7 @@
 MapManagerReportLocation
 ----
 
-![Cocoapods](https://img.shields.io/cocoapods/v/MapManagerReportLocation)
+[![Cocoapods](https://img.shields.io/cocoapods/v/MapManagerReportLocation)](https://cocoapods.org/pods/MapManagerReportLocation)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/jaywcjlove/map-manager-report-location)
 
 安装
