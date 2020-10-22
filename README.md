@@ -1,6 +1,9 @@
 MapManagerReportLocation
 ----
 
+![Cocoapods](https://img.shields.io/cocoapods/v/MapManagerReportLocation)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/jaywcjlove/map-manager-report-location)
+
 安装
 
 ```ruby
