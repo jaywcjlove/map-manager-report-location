@@ -1,6 +1,12 @@
 MapManagerReportLocation
 ----
 
+安装
+
+```ruby
+pod 'MapManagerReportLocation'
+```
+
 依赖高德地图定位 `AMapLocation` 和 国密算法 `GMObjC`
 
 ```ruby
